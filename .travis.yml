@@ -9,7 +9,7 @@ install:
     - conan user
     - conan remote add chaubold https://api.bintray.com/conan/chaubold/demo
 script:
-    - conan install
+    - conan install .
     - cmake src
     - make
 after_success:
