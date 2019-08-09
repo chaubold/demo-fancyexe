@@ -12,6 +12,5 @@ script:
     - conan install .
     - cmake src
     - make
-after_success:
-    - bin/fancyexe.exe
+    - ./bin/fancyexe.exe # testing
 
