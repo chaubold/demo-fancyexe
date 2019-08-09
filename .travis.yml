@@ -1,0 +1,17 @@
+language: python
+os: linux
+python: "3.7"
+dist: xenial
+compiler:
+    - gcc
+install:
+    - pip install conan
+    - conan user
+    - conan remote add chaubold https://api.bintray.com/conan/chaubold/demo
+script:
+    - conan install
+    - cmake src
+    - make
+after_success:
+    - bin/fancyexe.exe
+
