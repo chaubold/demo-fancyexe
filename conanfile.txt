@@ -1,6 +1,6 @@
 [requires]
-libfoo/0.1@chaubold/stable
-libbar/0.1@chaubold/stable
+libfoo/[>=0.1]@chaubold/stable
+libbar/[>0.0]@chaubold/stable
 
 [generators]
 cmake
