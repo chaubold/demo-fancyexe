@@ -11,6 +11,6 @@ install:
 script:
     - conan install .
     - cmake src
-    - make VERBOSE=1
-    - bin/fancyexe.exe # testing
+    - make
+    - bin/fancyexe # testing
 
