@@ -7,7 +7,7 @@ compiler:
 script:
     - cmake .
     - make
-    - cp bin/ext/libbar/libbar/*libbar.* bin/src/
-    - cp bin/ext/libfoo/libfoo/*libfoo.* bin/src/
-    - bin/src/fancyexe # testing
+    - cp ext/libbar/libbar/*libbar.* src/
+    - cp ext/libfoo/libfoo/*libfoo.* src/
+    - src/fancyexe # testing
 
