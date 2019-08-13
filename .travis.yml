@@ -4,13 +4,10 @@ python: "3.7"
 dist: xenial
 compiler:
     - gcc
-install:
-    - pip install conan
-    - conan user
-    - conan remote add chaubold https://api.bintray.com/conan/chaubold/demo
 script:
-    - conan install .
-    - cmake src
+    - cmake .
     - make
-    - bin/fancyexe # testing
+    - cp ext/libbar/libbar/*libbar.* src/
+    - cp ext/libfoo/libfoo/*libfoo.* src/
+    - src/fancyexe # testing
 

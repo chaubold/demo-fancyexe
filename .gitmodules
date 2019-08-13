@@ -1,0 +1,6 @@
+[submodule "ext/libbar"]
+	path = ext/libbar
+	url = https://github.com/chaubold/demo-libbar
+[submodule "ext/libfoo"]
+	path = ext/libfoo
+	url = https://github.com/chaubold/demo-libfoo
