@@ -5,7 +5,7 @@ dist: xenial
 compiler:
     - gcc
 script:
-    - cmake
+    - cmake .
     - make
     - cp bin/ext/libbar/libbar/*libbar.* bin/src/
     - cp bin/ext/libfoo/libfoo/*libfoo.* bin/src/
